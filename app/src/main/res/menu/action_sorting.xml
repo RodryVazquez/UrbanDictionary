@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/sortMenu"
+        android:title="@string/app_name"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:title="@string/menu_thumb_up"
+                android:id="@+id/thumbUp"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_thumb_up"/>
+            <item android:title="@string/menu_thumb_down"
+                android:id="@+id/thumbDown"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_thumb_down"/>
+        </menu>
+    </item>
+</menu>

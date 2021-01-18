@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UrbanDictionary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_description">UrbanDictionaryApp</string>
+
+    <string name="item_card_title">Catfish</string>
+    <string name="item_card_subtitle">A fake or stolen online identity created or used for the purposes of beginning a deceptive relationship</string>
+    <string name="item_card_second_subtitle">Adam just got $40 cash out from the friend ATM at lunch today</string>
+    <string name="item_card_footer_title">jerky face</string>
+    <string name="item_card_footer_date">Nov 15,2010</string>
+    <string name="item_card_thumb_up">32</string>
+    <string name="item_card_thumb_down">2</string>
+
+    <string name="input_search_hint">Type any word...</string>
+    <string name="get_data_error_message">An error has occurred when data is loading</string>
+    <string name="menu_thumb_up">thumb up</string>
+    <string name="menu_thumb_down">thumb down</string>
+</resources>
