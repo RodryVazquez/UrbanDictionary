@@ -16,4 +16,5 @@
     <string name="get_data_error_message">An error has occurred when data is loading</string>
     <string name="menu_thumb_up">thumb up</string>
     <string name="menu_thumb_down">thumb down</string>
+
 </resources>

@@ -29,11 +29,11 @@ class TaskCardHolder(
     fun bind(itemCard: ItemCard) {
 
         binding.apply {
-            title.text = itemCard.word
-            subtitle.text = itemCard.definition
-            secondSubTitle.text = itemCard.permalink
-            footerTitle.text = itemCard.author
-            footerDate.text = itemCard.written_on
+            itemWord.text = itemCard.word
+            itemDefinition.text = itemCard.definition
+            itemPermalink.text = itemCard.permalink
+            itemAuthor.text = itemCard.author
+            itemDate.text = itemCard.written_on
 
             thumbUpCount.text = itemCard.thumbsUp.toString()
             thumbDownCount.text = itemCard.thumbsDown.toString()
