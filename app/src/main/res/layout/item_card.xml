@@ -111,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
                     android:contentDescription="@string/image_description"
-                    android:src="@drawable/ic_thumb_up"
+                    android:src="@drawable/ic_baseline_thumb_up"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -139,7 +139,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginBottom="12dp"
                     android:contentDescription="@string/image_description"
-                    android:src="@drawable/ic_thumb_down"
+                    android:src="@drawable/ic_baseline_thumb_down"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/thumbUpCount"
                     app:layout_constraintTop_toTopOf="parent"
@@ -171,10 +171,14 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
                 android:contentDescription="@string/image_description"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/itemDate"
+
                 android:layout_marginEnd="16dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,10 @@
 package com.example.urbandictionary.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -11,15 +12,14 @@ import com.example.urbandictionary.R
 import com.example.urbandictionary.databinding.FragmentListBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-const val TAG: String = "ListFragment"
 
 @AndroidEntryPoint
-class ListFragment : Fragment() {
+class ListFragment : Fragment(), ShareItemClickListener {
 
     private lateinit var binding: FragmentListBinding
     private val viewModel: ListViewModel by viewModels()
 
-    private val itemListAdapter = ItemListAdapter()
+    private val itemListAdapter = ItemListAdapter(this)
 
     companion object {
         fun newInstance() = ListFragment()
@@ -98,5 +98,15 @@ class ListFragment : Fragment() {
                 }
             }
         })
+    }
+
+    override fun shareItemListener(itemCard: ItemCard) {
+        val sendIntent = Intent().apply {
+            putExtra(Intent.EXTRA_TEXT, itemCard.permalink)
+            action = Intent.ACTION_SEND
+            type = "text/plain"
+        }
+        startActivity(sendIntent)
+
     }
 }

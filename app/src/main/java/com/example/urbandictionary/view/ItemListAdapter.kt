@@ -1,5 +1,6 @@
 package com.example.urbandictionary.view
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -7,12 +8,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.urbandictionary.databinding.ItemCardBinding
 
-class ItemListAdapter() : ListAdapter<ItemCard, TaskCardHolder>(ItemCardDiffCallback()) {
+class ItemListAdapter(
+    private val shareItemClickListener: ShareItemClickListener
+) : ListAdapter<ItemCard, TaskCardHolder>(ItemCardDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskCardHolder {
         val itemBinding =
             ItemCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return TaskCardHolder(itemBinding)
+        return TaskCardHolder(itemBinding, shareItemClickListener)
     }
 
     override fun getItemCount(): Int = currentList.size
@@ -24,7 +27,8 @@ class ItemListAdapter() : ListAdapter<ItemCard, TaskCardHolder>(ItemCardDiffCall
 }
 
 class TaskCardHolder(
-    private val binding: ItemCardBinding
+    private val binding: ItemCardBinding,
+    private val shareItemClickListener: ShareItemClickListener
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(itemCard: ItemCard) {
 
@@ -37,6 +41,10 @@ class TaskCardHolder(
 
             thumbUpCount.text = itemCard.thumbsUp.toString()
             thumbDownCount.text = itemCard.thumbsDown.toString()
+
+            shareSocialMedia.setOnClickListener {
+                shareItemClickListener.shareItemListener(itemCard)
+            }
         }
     }
 }
