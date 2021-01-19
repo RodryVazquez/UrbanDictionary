@@ -1,4 +1,4 @@
-#Urban Dictionary
+# Urban Dictionary
 Urban Dictionary is a [crowdsourced](https://en.wikipedia.org/wiki/Crowdsourced "Crowdsourced")  [online dictionary](https://en.wikipedia.org/wiki/List_of_online_dictionaries "List of online dictionaries") for [slang](https://en.wikipedia.org/wiki/Slang "Slang") words and phrases, operating under the motto "Define Your World."[[1]](https://en.wikipedia.org/wiki/Urban_Dictionary#cite_note-1) The website was founded in 1999 by Aaron Peckham. Originally, Urban Dictionary was intended as a dictionary of [slang or cultural words and phrases](https://en.wikipedia.org/wiki/Slang_dictionary "Slang dictionary"), not typically found in standard dictionaries, but it is now used to define any word, event, or phrase (including sexually explicit content). Words or phrases on Urban Dictionary may have multiple definitions, usage examples, and [tags](https://en.wikipedia.org/wiki/Tag_(metadata) "Tag (metadata)"). As of 2014, the dictionary had over seven million definitions, while around 2,000 new entries were being added daily.
 
 ## Tool Kit
