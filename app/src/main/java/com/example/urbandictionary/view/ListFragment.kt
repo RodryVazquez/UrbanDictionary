@@ -84,6 +84,9 @@ class ListFragment : Fragment(), ShareItemClickListener {
         })
 
         viewModel.loadError.observe(viewLifecycleOwner, Observer { isError ->
+
+
+
             isError?.let {
                 binding.errorLegend.visibility = if (it) View.VISIBLE else View.GONE
             }
