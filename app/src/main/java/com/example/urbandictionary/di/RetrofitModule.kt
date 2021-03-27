@@ -49,7 +49,7 @@ object RetrofitModule {
                 val newClient = chain.request().newBuilder()
                     .addHeader(
                         "x-rapidapi-key",
-                        "67367ba8ebmsh3788481201c7053p1bfe26jsn0c5febd1f1ba"
+                        ""
                     )
                     .addHeader(
                         "x-rapidapi-host",
